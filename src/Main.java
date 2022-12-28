@@ -13,17 +13,12 @@ public class Main {
         File root = findRoot();
         readFilesInDirectory(root);
         String[] sorted_files = makeFileList();
-        printFiles(sorted_files);
+        if (filesCorrect(sorted_files)) {
+            printFiles(sorted_files);
+        }
     }
 
     private static void printFiles (String[] sorted_files) throws IOException {
-        for (String el : sorted_files) {
-            File file = new File(el);
-            if (!file.isFile()) {
-                System.out.println("Impossible to make a list. There is no file: " + el);
-                return;
-            }
-        }
         for (String el : sorted_files) {
             System.out.println(el);
         }
@@ -33,6 +28,24 @@ public class Main {
             String text = String.join(System.lineSeparator(), lines);
             System.out.println(text);
         }
+    }
+
+    private static boolean filesCorrect(String[] sorted_files) {
+        Set<String> keys = tie_files.keySet();
+        for (String key : keys) {
+            boolean flag = false;
+            for (String el : sorted_files) {
+                if (el.contains(key)) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag) {
+                System.out.println("Impossible to make a list. There is no file: " + key);
+                return false;
+            }
+        }
+        return true;
     }
 
     private static String[] makeFileList() {
