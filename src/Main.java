@@ -71,7 +71,7 @@ public class Main {
 
     private static void readFilesInDirectory(File folder) throws IOException {
         String[] paths = folder.list();
-        if (paths.length != 0) {
+        if (paths != null && paths.length != 0) {
             for (String el : paths) {
                 String this_file = folder + "\\" + el;
                 File path = new File(this_file);

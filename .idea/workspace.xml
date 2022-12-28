@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="308f5c27-1999-49e8-a5eb-5c4c902700e0" name="Changes" comment="Created the correct sorting method.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="308f5c27-1999-49e8-a5eb-5c4c902700e0" name="Changes" comment="Added filesCorrect method, program is able to check if files are correct now">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672250086240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added filesCorrect method, program is able to check if files are correct now">
+      <created>1672252075254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672252075254</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +84,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Checking" />
     <MESSAGE value="Created the correct sorting method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the correct sorting method." />
+    <MESSAGE value="Added filesCorrect method, program is able to check if files are correct now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added filesCorrect method, program is able to check if files are correct now" />
   </component>
 </project>
